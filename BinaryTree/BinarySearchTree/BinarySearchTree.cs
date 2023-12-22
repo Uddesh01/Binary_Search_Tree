@@ -57,6 +57,22 @@
                 Preorder(node.Left);
                 Preorder(node.Right);
             }
+          
+        }
+
+        public void InorderTraversal()
+        {
+            Console.WriteLine("\nIn-Oreder Traversal:");
+            Inorder(root);
+        }
+        private static void Inorder(Node node)
+        {
+            if (node != null)
+            {
+                Inorder(node.Left);
+                Console.Write(node.value + " ");
+                Inorder(node.Right);
+            }
         }
         private class Node
         {
