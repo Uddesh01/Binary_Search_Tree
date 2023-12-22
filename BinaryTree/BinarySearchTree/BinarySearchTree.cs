@@ -57,7 +57,7 @@
                 Preorder(node.Left);
                 Preorder(node.Right);
             }
-          
+
         }
 
         public void InorderTraversal()
@@ -74,6 +74,23 @@
                 Inorder(node.Right);
             }
         }
+
+        public void PostorderTraversal()
+        {
+            Console.WriteLine("\nPost-Order Traversal:");
+            Postorder(root);
+        }
+
+        private void Postorder(Node node)
+        {
+            if (node != null)
+            {
+                Postorder(node.Left);
+                Postorder(node.Right);
+                Console.Write(node.value + " ");
+            }
+        }
+
         private class Node
         {
             public int value;

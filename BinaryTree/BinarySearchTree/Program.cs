@@ -16,5 +16,6 @@ class Program
 
         bst.PreorderTraversal();
         bst.InorderTraversal();
+        bst.PostorderTraversal();
     }
 }
