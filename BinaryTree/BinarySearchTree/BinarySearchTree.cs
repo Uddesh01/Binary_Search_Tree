@@ -43,7 +43,21 @@
             }
         }
 
-       
+        public void PreorderTraversal()
+        {
+            Console.WriteLine("Pre-Order Traversal:");
+            Preorder(root);
+        }
+
+        private void Preorder(Node node)
+        {
+            if (node != null)
+            {
+                Console.Write(node.value + " ");
+                Preorder(node.Left);
+                Preorder(node.Right);
+            }
+        }
         private class Node
         {
             public int value;

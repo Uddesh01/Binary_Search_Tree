@@ -14,6 +14,6 @@ class Program
         bst.insert(6);
         bst.insert(7);
 
-       
+        bst.PreorderTraversal();
     }
 }
